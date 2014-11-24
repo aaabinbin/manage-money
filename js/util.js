@@ -15,5 +15,9 @@ Util = {
             "');}return p.join('');");
         // Provide some basic currying to the user
         return data ? fn(data) : fn;
+    },
+    hasAttrSupport: function(str){
+        var i = document.createElement('input');
+        return  str in i;
     }
 }
