@@ -18,7 +18,50 @@
             this.bindEvent();
         },
         bindEvent:function(){
-
+            if(!Util.hasAttrSupport("placeholder")){
+                $("#j-user").val("用户名").click(function(){
+                    if($(this).val()=="用户名"){
+                        $(this).val("");
+                    }
+                }).blur(function(){
+                    if($(this).val()==""){
+                        $(this).val("用户名");
+                    }
+                });
+                $("#j-password").val("密码").click(function(){
+                    if($(this).val()=="密码"){
+                        $(this).val("");
+                    }
+                }).blur(function(){
+                    if($(this).val()==""){
+                        $(this).val("密码");
+                    }
+                });;
+            }
+            $("#j-log-btn").click(function(){
+                var username = $("#j-user").val();
+                var pass = $("#j-password").val();
+                if (!(username != "" && pass != "" && username != "用户名" && pass != "密码")) {
+                    alert("请填写用户名或密码");
+                } else {
+                    $.ajax({
+                        url: "../js/login.json",
+                        data: {
+                            username: username,
+                            pass: pass
+                        },
+                        dataType: "json",
+                        type: "post",
+                        error: function () {
+                        },
+                        success: function (data) {
+                            if (data.loginStatus == 1) {
+                                alert("登录成功")
+                            }
+                        }
+                    });
+                }
+            });
         },
 
         getData:function(){
@@ -38,7 +81,6 @@
         },
         renderPage:function(data){
             var self = this;
-            console.log(data);
             var $income = $("#halei .j-income_num");
             $(".j-btcPrice").text(data.BTCprice);
             for(var i =0;i<this.productLen;i++){
@@ -69,7 +111,6 @@
             myChart.setFlagColor('#088ae0');
             myChart.setFlagRadius(4);
             for(var i=0;i<arr.length;i++) {
-                console.log(arr[i][1]);
                 myChart.setTooltip([arr[i][0], arr[i][1]]);
                 myChart.setLabelX([arr[i][0], arr[i][0]]);
             }
