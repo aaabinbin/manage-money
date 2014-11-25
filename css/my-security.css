@@ -30,6 +30,7 @@
 	.binding .contain { height: 230px;}
 .revise_bank { width: 700px; height: 380px;}
 	.revise_bank .contain { height: 338px;}
+.revise_bank .contain a { color: #088ae0; text-decoration: underline; margin: 0 10px;}
 							.contain .size { height: 32px; width: 320px; padding-top: 20px; line-height: 32px;}
 							.contain .size div { height: 32px; float: left; width: 75px; text-align: right;}
 							.contain .size div p { line-height: 32px;}
@@ -42,7 +43,8 @@
 											font-size: 18px; 
 											margin-top: 20px;
 										  }
-							.contain .text { height: 25px; width: 200px; line-height: 25px; margin-left: 280px; margin-top: 10px;}
+							.contain .btn a{color:#fff;text-decoration: none;}
+.contain .text { height: 25px; width: 200px; line-height: 25px; margin-left: 280px; margin-top: 10px;}
 							.contain .text span { float: left;}
 							.contain .text img { padding-top: 5px; margin-right:5px; float: left;}
 							.confirm input { width: 98px; margin-left: 0;}

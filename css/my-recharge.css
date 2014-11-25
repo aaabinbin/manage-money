@@ -22,9 +22,10 @@
 							  border-left: 1px solid #d4d4d4; 
 							  border-right: 1px solid #d4d4d4;
 							}
-							.contain .howmuch { height: 32px; width: 280px; padding-top: 25px; line-height: 32px;}
+							.contain .howmuch {width:355px; height: 32px; padding-top: 25px; line-height: 32px;}
 							.contain .howmuch div { height: 32px; float: left;}
 							.contain .howmuch div p { line-height: 32px;}
+							.contain .howmuch a { color: #088ae0; text-decoration: underline; margin-left: 10px;}
 							.contain input { height: 22px; 
 											 width: 178px; 
 											 border: 1px solid #d4d4d4; 
