@@ -195,14 +195,15 @@
 			var formalbank = $("#j-fbank").val();
 			var _fImg = $("#j-fbank").parent().parent().find("img");//定位到图片层
 			if(formalbank != ""){
-					_fImg.css("visibility","visible");
-					if (formalbank == "")
-						_fImg.attr("src",Img[0]);
-					else
-						_fImg.attr("src",Img[1]);
-				}
-				else
-					_fImg.css("visibility","hidden");
+				_fImg.css("visibility","visible");
+				_fImg.attr("src",Img[0]);
+					
+			}
+			else{
+				_fImg.css("visibility","visible");
+				_fImg.attr("src",Img[1]);
+			}
+
 		},
 
 		nbank:function(){
@@ -229,14 +230,8 @@
 				}	
 			}
 			else{
-				_nImg.css("visibility","hidden");
-
-				if(repeatbank =="")
-					_reImg.css("visibility","hidden");
-				else{
-					_reImg.attr("src",Img[1]);
-					_reImg.css("visibility","visible");
-				}
+				_nImg.attr("src",Img[1]);
+				_nImg.css("visibility","visible");
 			}
 		},
 
@@ -256,12 +251,8 @@
 					}
 				}
 				else{
-					if(newbank != ""){
-						_reImg.attr("src",Img[1]);
-						_reImg.css("visibility","visible");
-					}
-					else
-						_reImg.css("visibility","hidden");
+					_reImg.attr("src",Img[1]);
+					_reImg.css("visibility","visible");
 				}
 		}
 

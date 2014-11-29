@@ -40,5 +40,5 @@
 .contain .text img { padding-top: 5px; margin-right:5px; float: left;}
 .confirm input { width: 98px;}
 .confirm a { color: #088ae0; text-decoration: underline; margin-left: 7px;}
-.contain .btn { width: 280px; height: 48px; margin-bottom: 20px; background-color: #088ae0; line-height: 48px; color: white; font-size: 18px;}
+.contain .btn {display: block; width: 280px; height: 48px; margin-bottom: 20px; background-color: #088ae0; line-height: 48px; color: white; font-size: 18px;}
 .content span { margin-left: 10px;}

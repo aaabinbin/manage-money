@@ -35,7 +35,7 @@
 .contain .size img { visibility: hidden; margin-left: 5px;}
 .contain .size .head { width: 70px; text-align: right;}
 .contain .size .content { width: 240px; text-align: left;}
-.contain .btn { height: 48px; 
+.contain .btn { height: 48px; display:block;
 				width: 200px; 
 				background-color: #088ae0; 
 				line-height: 48px; 
