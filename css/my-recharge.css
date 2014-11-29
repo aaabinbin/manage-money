@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 #mainr { width: 783px; height: auto; background-color: white; }
-.mainr { width: 700px; height: 460px; margin: 30px 41px 33px 41px;}
+.mainr { width: 700px; height: auto; margin: 30px 41px 30px 41px;}
 .recharge { width: 700px; 
 			height: 140px; 
 			font-size: 14px;
@@ -15,17 +15,15 @@
 							 border-right: 1px solid #d4d4d4;
 							 line-height: 104px; 
 							}
-.withdraw_cash { width: 700px; height: 250px; font-size: 14px; margin-top: 30px;}
-	.withdraw_cash .contain { height: 214px; 
+.withdraw_cash { width: 700px; height: auto; font-size: 14px; margin-top: 30px;}
+	.withdraw_cash .contain { padding-bottom: 20px;
 							  width: 698px; 
 							  border-bottom: 1px solid #d4d4d4; 
 							  border-left: 1px solid #d4d4d4; 
 							  border-right: 1px solid #d4d4d4;
 							}
-							.contain .howmuch {width:355px; height: 32px; padding-top: 25px; line-height: 32px;}
-							.contain .howmuch div { height: 32px; float: left;}
-							.contain .howmuch div p { line-height: 32px;}
-							.contain .howmuch a { color: #088ae0; text-decoration: underline; margin-left: 10px;}
+							.contain .size { height: 32px; padding-top: 25px; line-height: 32px;}
+							.contain .size .posi { width: 100px; }
 							.contain input { height: 22px; 
 											 width: 178px; 
 											 border: 1px solid #d4d4d4; 
@@ -33,9 +31,6 @@
 											 padding: 4px 10px 4px 10px;
 											 margin-left: 10px;
 											}
-							.contain .confirm { height: 32px; width: 280px; padding-top: 20px; line-height: 32px;}
-							.contain .confirm div { height: 32px; float: left;}
-							.contain .howmuch div p { line-height: 32px;}
 							.contain .confirm input { width: 98px; }
 							.contain .confirm a { color: #088ae0; text-decoration: underline; margin-left: 10px;}
 							.contain .text { height: 35px; width: 120px; line-height: 35px;}

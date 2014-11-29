@@ -7,6 +7,7 @@
         productLen:3,
         incomeTpl:
         [
+
             '<span class="num1"><%= Item.dayEarnings %>元</span>',
             '<span class="num2"><%= Item.leastCopies %>份</span>',
             '<span class="num3"><%= Item.price %>元/份</span>',
@@ -56,8 +57,6 @@
                         success: function (data) {
                             if (data.loginStatus == 1) {
                                 alert("登录成功")
-                            }else{
-                                alert("登录失败");
                             }
                         }
                     });
