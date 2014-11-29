@@ -52,7 +52,7 @@
 				<div class="title cl">
 					<p>账户明细</p>
 					<select id="content" class="fl">
-						<option id="select" value="所有操作记录">所有操作记录</option>
+						<option id="select" value="0">所有操作记录</option>
 						<option value="1">CCC.</option>
 						<option value="2">DDD.</option>
 						<option value="3">EEE.</option>
@@ -68,67 +68,67 @@
 						<li class="withdraw">可提现额</li>
 					</ul>
 				</div>
-				<div class="table mar_cen">
-					<ul>
-						<li class="date">2014-11-20</li>
-						<li class="operate">购买</li>
-						<li class="money">12</li>
-						<li class="withdraw">12</li>
-					</ul>
-					<ul>
-						<li class="date">2014-11-20</li>
-						<li class="operate">购买</li>
-						<li class="money">12</li>
-						<li class="withdraw">12</li>
-					</ul>
-					<ul>
-						<li class="date">2014-11-20</li>
-						<li class="operate">提现</li>
-						<li class="money">12</li>
-						<li class="withdraw">12</li>
-					</ul>
-					<ul>
-						<li class="date">2014-11-20</li>
-						<li class="operate orange">收益</li>
-						<li class="money">12</li>
-						<li class="withdraw">12</li>
-					</ul>
-					<ul>
-						<li class="date">2014-11-20</li>
-						<li class="operate orange">收益</li>
-						<li class="money">12</li>
-						<li class="withdraw">12</li>
-					</ul>
-					<ul>
-						<li class="date">2014-11-20</li>
-						<li class="operate">提现</li>
-						<li class="money">12</li>
-						<li class="withdraw">12</li>
-					</ul>
-					<ul>
-						<li class="date">2014-11-20</li>
-						<li class="operate">购买</li>
-						<li class="money">12</li>
-						<li class="withdraw">12</li>
-					</ul>
-					<ul>
-						<li class="date">2014-11-20</li>
-						<li class="operate blue">充值</li>
-						<li class="money">12</li>
-						<li class="withdraw">12</li>
-					</ul>
-					<ul>
-						<li class="date">2014-11-20</li>
-						<li class="operate blue">充值</li>
-						<li class="money">12</li>
-						<li class="withdraw">12</li>
-					</ul>
+				<div id="j-data-container" class="table mar_cen">
+					<!--<ul>-->
+						<!--<li class="date">2014-11-20</li>-->
+						<!--<li class="operate">购买</li>-->
+						<!--<li class="money">12</li>-->
+						<!--<li class="withdraw">12</li>-->
+					<!--</ul>-->
+					<!--<ul>-->
+						<!--<li class="date">2014-11-20</li>-->
+						<!--<li class="operate">购买</li>-->
+						<!--<li class="money">12</li>-->
+						<!--<li class="withdraw">12</li>-->
+					<!--</ul>-->
+					<!--<ul>-->
+						<!--<li class="date">2014-11-20</li>-->
+						<!--<li class="operate">提现</li>-->
+						<!--<li class="money">12</li>-->
+						<!--<li class="withdraw">12</li>-->
+					<!--</ul>-->
+					<!--<ul>-->
+						<!--<li class="date">2014-11-20</li>-->
+						<!--<li class="operate orange">收益</li>-->
+						<!--<li class="money">12</li>-->
+						<!--<li class="withdraw">12</li>-->
+					<!--</ul>-->
+					<!--<ul>-->
+						<!--<li class="date">2014-11-20</li>-->
+						<!--<li class="operate orange">收益</li>-->
+						<!--<li class="money">12</li>-->
+						<!--<li class="withdraw">12</li>-->
+					<!--</ul>-->
+					<!--<ul>-->
+						<!--<li class="date">2014-11-20</li>-->
+						<!--<li class="operate">提现</li>-->
+						<!--<li class="money">12</li>-->
+						<!--<li class="withdraw">12</li>-->
+					<!--</ul>-->
+					<!--<ul>-->
+						<!--<li class="date">2014-11-20</li>-->
+						<!--<li class="operate">购买</li>-->
+						<!--<li class="money">12</li>-->
+						<!--<li class="withdraw">12</li>-->
+					<!--</ul>-->
+					<!--<ul>-->
+						<!--<li class="date">2014-11-20</li>-->
+						<!--<li class="operate blue">充值</li>-->
+						<!--<li class="money">12</li>-->
+						<!--<li class="withdraw">12</li>-->
+					<!--</ul>-->
+					<!--<ul>-->
+						<!--<li class="date">2014-11-20</li>-->
+						<!--<li class="operate blue">充值</li>-->
+						<!--<li class="money">12</li>-->
+						<!--<li class="withdraw">12</li>-->
+					<!--</ul>-->
 				</div>
 				<div class="page mar_cen">
-					<a href="#">上一页</a>
-					<span><input class="text_r" type="text" value="1" /></span> 
-					<span>/ 23</span>
-					<a href="#">下一页</a>
+					<a id="j-prev-page" page="1" href="#">上一页</a>
+					<span><input id="j-cur-page" class="text_r" type="text" value="1" /> / </span>
+					<span id="j-total-page">23</span>
+					<a id="j-next-page" page="2" href="#">下一页</a>
 				</div>
 			</div>
 		</div>
@@ -177,5 +177,7 @@
 		</div>
 	</div>
 	<script src="../js/jquery.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/account-detail.js"></script>
 </body>
 </html>
