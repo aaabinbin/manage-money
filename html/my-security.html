@@ -53,7 +53,25 @@
 				<div class="revise_password frame mar_cen">
 					<div class="title">修改密码</div>
 					<div class="contain">
-						<div class="size mar_cen cl">
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">原密码:</td>
+								<td class="content"><input id="j-fpassword" type="password" value=""/><img src="../img/confirm.png"/></td>
+							</tr>
+						</table>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">新密码:</td>
+								<td class="content"><input id="j-npassword" type="password" value=""/><img src="../img/false.png"/></td>
+							</tr>
+						</table>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">重复密码:</td>
+								<td class="content"><input id="j-repassword" type="password" value=""/><img src="../img/confirm.png"/></td>
+							</tr>
+						</table>
+						<!--<div class="size mar_cen cl">
 							<span>原密码:</span>
 							<span><input type="text" value="" id="j-fpassword"/></span>
 							<img src="../img/confirm.png"/>
@@ -67,7 +85,7 @@
 							<span>重复密码:</span>
 							<span><input type="text" value="" id="j-repassword"/></span>
 							<img src="../img/confirm.png"/>
-						</div>
+						</div>-->
 						<div class="btn mar_cen text_cen"><a href="javascript:void(0)" id="j-sub-btn1"><p>提交</p></a></div>
 					</div>
 				</div>
@@ -95,32 +113,40 @@
 						</table>
 						<p class="text mar_cen"><img src="../img/warning.png"/><span>确认后，姓名不可修改</span></p>
 						<div id="j-sub-btn2" class="btn mar_cen text_cen"><a href="javascript:void(0)"><p class="block">提交</p></a></div>
-
+						
 					</div>
 				</div>
-				<div class="revise_bank frame mar_cen">
+				<!--<div class="revise_bank frame mar_cen">
 					<div class="title">修改银行卡</div>
 					<div class="contain">
-						<div class="size mar_cen cl">
-							<span>原卡号:</span>
-							<span><input type="text" value="" id="j-fbank"/></span>
-							<img src="../img/confirm.png"/>
-						</div>
-						<div class="size mar_cen cl">
-							<span>新卡号:</span>
-							<span><input type="text" value="" id="j-nbank"/></span>
-							<img src="../img/false.png"/>
-						</div>
-						<div class="size mar_cen cl">
-							<span>确认卡号:</span>
-							<span><input type="text" value="" id="j-rebank"/></span>
-							<img src="../img/confirm.png"/>
-						</div>
-						<div class="confirm size mar_cen cl"><span>短信验证:</span><span><input type="text" value="" /></span><a href="#">发送验证码</a></div>
-						<p class="text mar_cen cl"><a href="#">验证</a><img src="../img/confirm.png"/><span>验证码正确</span></p>
-						<div><a href="javascript:void(0)" id="j-sub-btn3"  class="btn mar_cen text_cen">提交</a></div>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">原卡号:</td>
+								<td class="content"><input id="j-fbank" type="text" value=""/><img src="../img/confirm.png"/></td>
+							</tr>
+						</table>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">新卡号:</td>
+								<td class="content"><input id="j-nbank" type="text" value=""/><img src="../img/false.png"/></td>
+							</tr>
+						</table>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">确认卡号:</td>
+								<td class="content"><input id="j-rebank" type="text" value=""/><img src="../img/confirm.png"/></td>
+							</tr>
+						</table>
+						<table class="confirm mar_cen size">
+							<tr>
+								<td class="head">短信验证:</td>
+								<td class="content"><input id="j-confirm" type="text" value=""/><a href="#">发送验证码</a></td>
+							</tr>
+						</table>
+						<p class="text mar_cen cl"><img src="../img/confirm.png"/><span>验证码正确</span></p>
+						<div id="j-sub-btn3" class="btn mar_cen text_cen"><a href="#"><p class="block">提交</p></a></div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>
