@@ -21,18 +21,18 @@
 				}
 .frame { width: 700px; height: auto; color: #000000;}
 .revise_password { width: 700px; height: auto; }
-.revise_password .contain { height: auto; padding-top: 30px; padding-bottom: 30px;}
-.contain .size { height: 32px; margin-bottom:20px; line-height: 32px;}
+.revise_password .contain { height: auto; padding-top: 10px; padding-bottom: 30px;}
+.contain .size { height: 32px; margin-top: 20px; line-height: 32px;}
 .contain .size img { visibility: hidden; margin-left: 5px;}
 .contain .size .head { width: 35px; text-align: right;}
 .contain .size .content { width: auto; text-align: left;}
+.contain .cue { width: 240px; height: 25px; margin-left: 5px; line-height: 24px; color: #cc1122; visibility: hidden;}
 .contain .btn { height: 48px; display:block;
 				width: 224px; 
 				background-color: #088ae0; 
 				line-height: 48px; 
 				color: white; 
 				font-size: 18px; 
-				margin-top: 20px;
 			  }
 .contain .btn a { color: white;}
 .contain .text { height: 25px; width: 200px; line-height: 25px; margin-left: 275px; margin-top: 10px;}

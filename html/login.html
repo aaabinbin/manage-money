@@ -13,7 +13,7 @@
 			<span class="fl">1BTC≈2698.09元</span>
 			<span class="fr text_r">
 				<a href="#"><span class="infor">您好，张三，您的账号：1234567@qq.com</span><span class="ID">ID：1234</span></a>
-				<a href="#"><span class="register">注册</span></a>
+				<a href="register.html"><span class="register">注册</span></a>
 			</span>
 		</div>
 		<div id="top_white" class="mar_cen">
@@ -27,7 +27,7 @@
 	</div>
 	<div class="main">
 		<div id="mainr" class="mar_cen cl">
-			<div class="mainr mar_cen">
+			<div class="mainr mar_cen">				
 				<div class="revise_password frame">
 						<div class="title">登录</div>
 						<div class="contain">
@@ -42,8 +42,16 @@
 									<td class="head">密码:</td>
 									<td class="content"><input id="j-npassword" type="password" value=""/><img src="../img/false.png"/></td>
 								</tr>
+								<tr>
+									<td class="head"></td>
+									<td>
+										<div class="cue text_l block">用户名或密码错误4次机会!</div>
+									</td>
+								</tr>
 							</table>
-							<div class="btn mar_cen text_cen"><a href="javascript:void(0)" id="j-sub-btn1"><p>登录</p></a></div>
+							<form id="login" name="login" method="">
+								<div class="btn mar_cen text_cen"><a href="javascript:void(0)" id="j-sub-btn1"><p>登录</p></a></div>
+							</form>
 							<table class="tip mar_cen">
 								<tr>
 									<td class="text_l"><a class="forgetpass" href="#">忘记密码</a></td>
@@ -52,7 +60,7 @@
 							</table>
 						</div>
 					</div>
-				</div>
+				</div>				
 			</div>
 		</div>
 	</div>
