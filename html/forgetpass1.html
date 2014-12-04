@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>登录</title>
+<title>忘记密码</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/reset.css">
 <link rel="stylesheet" type="text/css" href="../css/account-reset.css">
-<link rel="stylesheet" type="text/css" href="../css/login.css">
+<link rel="stylesheet" type="text/css" href="../css/forgetpass.css">
 </head>
 <body class="text_cen">
 	<div id="top">
@@ -27,40 +27,50 @@
 	</div>
 	<div class="main">
 		<div id="mainr" class="mar_cen cl">
-			<div class="mainr mar_cen">				
-				<div class="revise_password frame">
-						<div class="title">登录</div>
-						<div class="contain">
-							<table class="mar_cen size">
-								<tr>
-									<td class="head">邮箱:</td>
-									<td class="content"><input id="j-fpassword" type="password" value=""/><img src="../img/confirm.png"/></td>
-								</tr>
-							</table>
-							<table class="mar_cen size">
-								<tr>
-									<td class="head">密码:</td>
-									<td class="content"><input id="j-npassword" type="password" value=""/><img src="../img/false.png"/></td>
-								</tr>
-								<tr>
-									<td class="head"></td>
-									<td>
-										<div class="cue text_l block">用户名或密码错误4次机会!</div>
-									</td>
-								</tr>
-							</table>
-							<form id="login" name="login" method="">
-								<div class="btn mar_cen text_cen"><a href="javascript:void(0)" id="j-sub-btn1"><p>登录</p></a></div>
-							</form>
-							<table class="tip mar_cen">
-								<tr>
-									<td class="text_l"><a class="forgetpass" href="#">忘记密码</a></td>
-									<td class="text_r"><a class="freeregi" href="register.html">免费注册</a></td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>				
+			<div class="mainr cl">
+				<div class="title mar_cen">
+					<div class="rectangle1 recblue fl">①输入账号</div>
+					<div class="triangle triblue fl"></div>
+					<div class="threetri fl"></div>
+					<div class="rectangle rectangleother fl">②身份认证</div>
+					<div class="triangle fl"></div>
+					<div class="threetri fl"></div>
+					<div class="rectangle rectangleother fl">③重设密码</div>
+					<div class="triangle fl"></div>
+					<div class="threetri fl"></div>
+					<div class="rectangle rectangleother fl">④完成</div>
+				</div>
+				<div class="content">
+					<table class="mar_cen">
+						<tr>
+							<td class="forimg"></td>
+							<td class="head">注册邮箱：</td>
+							<td><span><input type="text"/></span></td>
+							<td class="forimg"><img src="../img/false.png"></td>
+						</tr>
+						<tr class="confirm cl">
+							<td class="forimg"></td>
+							<td class="head">验证码：</td>
+							<td>
+								<span><input type="text"/></span>
+								<img class="fl" src="../img/confirmnum.png">
+								<a href="#">换一张</a>
+							</td>
+							<td class="forimg"></td>
+						</tr>
+						<tr class="check cl">
+							<td></td>
+							<td></td>
+							<td><img src="../img/false.png"/>验证码错误</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td class="btn" colspan="2"><a><div class="block">发送验证邮件</div></a></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
