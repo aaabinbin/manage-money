@@ -14,7 +14,7 @@
 			<span class="fl">1BTC≈2698.09元</span>
 			<span class="fr text_r">
 				<a href="#"><span class="infor">您好，张三，您的账号：1234567@qq.com</span><span class="ID">ID：1234</span></a>
-				<a href="#"><span class="register">注册</span></a>
+				<a href="register.html"><span class="register">注册</span></a>
 			</span>
 		</div>
 		<div id="top_white" class="mar_cen">
@@ -41,10 +41,10 @@
 			<div id="contact">
 				<ul>
 					<li class="title"><p>联系方式</p></li>
-					<li><img src="../img/contact_img1.png"><span>客服QQ：123456789</span></li>
-					<li><img src="../img/contact_img2.png"><span>邮箱：123456@qq.com</span></li>
-					<li><img src="../img/contact_img3.png"><span>QQ群：123456789</span></li>
-					<li><img src="../img/contact_img4.png"><span>客服电话：123456789</span></li>
+					<li><img src="../img/contact_img1.png"><span>客服QQ: 1010084986</span></li>
+					<li><img src="../img/contact_img2.png"><span>邮箱: bd@halleychina.com</span></li>
+					<li><img src="../img/contact_img3.png"><span>客服电话: 075586707660</span></li>
+					<li><img src="../img/contact_img4.png"><span>QQ群: 164245302</span></li>
 				</ul>
 			</div>
 		</div>
@@ -53,7 +53,25 @@
 				<div class="revise_password frame mar_cen">
 					<div class="title">修改密码</div>
 					<div class="contain">
-						<div class="size mar_cen cl">
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">原密码:</td>
+								<td class="content"><input id="j-fpassword" type="password" value=""/><img src="../img/confirm.png"/></td>
+							</tr>
+						</table>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">新密码:</td>
+								<td class="content"><input id="j-npassword" type="password" value=""/><img src="../img/false.png"/></td>
+							</tr>
+						</table>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">重复密码:</td>
+								<td class="content"><input id="j-repassword" type="password" value=""/><img src="../img/confirm.png"/></td>
+							</tr>
+						</table>
+						<!--<div class="size mar_cen cl">
 							<span>原密码:</span>
 							<span><input type="text" value="" id="j-fpassword"/></span>
 							<img src="../img/confirm.png"/>
@@ -67,7 +85,7 @@
 							<span>重复密码:</span>
 							<span><input type="text" value="" id="j-repassword"/></span>
 							<img src="../img/confirm.png"/>
-						</div>
+						</div>-->
 						<div class="btn mar_cen text_cen"><a href="javascript:void(0)" id="j-sub-btn1"><p>提交</p></a></div>
 					</div>
 				</div>
@@ -95,75 +113,71 @@
 						</table>
 						<p class="text mar_cen"><img src="../img/warning.png"/><span>确认后，姓名不可修改</span></p>
 						<div id="j-sub-btn2" class="btn mar_cen text_cen"><a href="javascript:void(0)"><p class="block">提交</p></a></div>
-
+						
 					</div>
 				</div>
-				<div class="revise_bank frame mar_cen">
+				<!--<div class="revise_bank frame mar_cen">
 					<div class="title">修改银行卡</div>
 					<div class="contain">
-						<div class="size mar_cen cl">
-							<span>原卡号:</span>
-							<span><input type="text" value="" id="j-fbank"/></span>
-							<img src="../img/confirm.png"/>
-						</div>
-						<div class="size mar_cen cl">
-							<span>新卡号:</span>
-							<span><input type="text" value="" id="j-nbank"/></span>
-							<img src="../img/false.png"/>
-						</div>
-						<div class="size mar_cen cl">
-							<span>确认卡号:</span>
-							<span><input type="text" value="" id="j-rebank"/></span>
-							<img src="../img/confirm.png"/>
-						</div>
-						<div class="confirm size mar_cen cl"><span>短信验证:</span><span><input type="text" value="" /></span><a href="#">发送验证码</a></div>
-						<p class="text mar_cen cl"><a href="#">验证</a><img src="../img/confirm.png"/><span>验证码正确</span></p>
-						<div><a href="javascript:void(0)" id="j-sub-btn3"  class="btn mar_cen text_cen">提交</a></div>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">原卡号:</td>
+								<td class="content"><input id="j-fbank" type="text" value=""/><img src="../img/confirm.png"/></td>
+							</tr>
+						</table>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">新卡号:</td>
+								<td class="content"><input id="j-nbank" type="text" value=""/><img src="../img/false.png"/></td>
+							</tr>
+						</table>
+						<table class="mar_cen size">
+							<tr>
+								<td class="head">确认卡号:</td>
+								<td class="content"><input id="j-rebank" type="text" value=""/><img src="../img/confirm.png"/></td>
+							</tr>
+						</table>
+						<table class="confirm mar_cen size">
+							<tr>
+								<td class="head">短信验证:</td>
+								<td class="content"><input id="j-confirm" type="text" value=""/><a href="#">发送验证码</a></td>
+							</tr>
+						</table>
+						<p class="text mar_cen cl"><img src="../img/confirm.png"/><span>验证码正确</span></p>
+						<div id="j-sub-btn3" class="btn mar_cen text_cen"><a href="#"><p class="block">提交</p></a></div>
 					</div>
-				</div>
+				</div>-->
 			</div>
 		</div>
 	</div>
 	<div id="footer">
+		<div class="footimg mar_cen">
+			<ul class="mar_cen cl">
+				<li><img src="../img/footer_img1.png"/></li>
+				<li><img src="../img/footer_img2.png"/></li>
+				<li><img src="../img/footer_img3.png"/></li>
+				<li><img src="../img/footer_img4.png"/></li>
+			</ul>
+		</div>
 		<div class="link mar_cen text_l">
 			<p>友情链接:&nbsp;
-				<a href="#">巴比特</a>
-				<a href="#">BTC123</a>
-				<a href="#">菠萝集市</a>
-				<a href="#">比巴克</a>
-				<a href="#">壹比特</a>
-				<a href="#">比特帮</a>
-				<a href="#">币民</a>
-				<a href="#">币看比特币</a>
-				<a href="#">比特币家园</a>
-				<a href="#">比特范</a>
-				<a href="#">比特币咨询网</a>
-				<a href="#">海峡比特币网</a>
-				<a href="#">比特币导航</a>
-				<a href="#">彩云比特</a>
-				<a href="#">比特币儿论坛</a>
-				<a href="#">i丘比特</a>
-				<a href="#">比特人</a>
-				<a href="#">bit22</a>
-				<a href="#">莱特币中文网</a>
-				<a href="#">比特汇</a>
-				<a href="#">比特时代</a>
+				<a href="https://bitcoinwisdom.com/bitcoin/difficulty">BitcoinWisdom</a>
+				<a href="https://www.okcoin.com/market.do?symbol=0&klineVision=1&mainType=-1">OKCoin</a>
+				<a href="http://8btc.com/">巴比特</a>
+				<a href="http://btckan.com/">币看网</a>
+				<a href="http://www.my089.com/">红岭创投</a>
+				<a href="http://www.zhongchou.cn/?refl=baiduPZ&utm_source=baidu&utm_medium=cpt&ag_kwid=869-7-077803a4b9bc45b6.d9876880608383b0">众筹网</a>
+				<a href="http://ttdai-pay.hrlsdn.com/">天天贷</a>
+				<a href="http://www.a-cifi.org/index.asp">中国互联网金融行业协会</a>
+				<a href="https://pay.sina.com.cn/index">新浪金融</a>
+				<a href="http://bbs.icxo.com/forum-1747-1.html">世界经理人社区</a>
+				<a href="http://bbs.money.163.com/list/licai.html">我理财网易理财财经论坛</a>
 			</p>
 		</div>
 		<div class="footer mar_cen text_cen">
 			<ul class="mar_cen">
-				<li>
-						<a href="#">资产公开</a>
-						<a href="#">媒体专访</a>
-						<a href="#">加入我们</a>
-						<a href="#">联系我们</a>
-						<a href="#">合作商家</a>
-						<a href="#">更新日志</a>
-						<a href="#">意见反馈</a>
-						<a href="#">帮助说明</a>
-				</li>
-				<li class="font">CopyRight © 2014 比特币存钱罐 版权所有·厦门比特多网络技术有限公司</li>
-				<li class="font">地址:厦门软件园二期望海路10号之四2楼</li>
+				<li class="font">CopyRight © 2014 哈雷中国 版权所有 • 哈雷中国信息技术有限公司</li>
+				<li class="font">地址：深圳市南山区田厦国际中心B座1821</li>
 			</ul>
 		</div>
 	</div>

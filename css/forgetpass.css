@@ -1,0 +1,48 @@
+@charset "utf-8";
+/* CSS Document */
+#mainr { width: 783px; height: auto; margin-top: 20px; background-color: white; }
+.mainr input { height: 22px; 
+			   width: 190px; 
+			   border: 1px solid #d4d4d4; 
+			   background-color: #f9f9f9;
+			   padding: 4px 10px 4px 10px;
+			 }
+.title { width: 700px; height: 35px; padding-top: 20px; font-size: 16px; line-height: 34px;}
+.rectangle { height: 34px;}
+.rectangle1 { width: 173px;  color: #6d6e71;}
+.rectangleother { width: 114px; padding-left: 20px; color: #6d6e71; text-align: left; background-color: #f1f1f1;}
+.recblue { background-color: #ecf9ff; color: black; }
+.recgray { background-color: #d4d4d4; color: white; }
+.triangle { width: 0px; height: 0px; border-width: 17px; 
+			border-color: transparent transparent transparent #f1f1f1;
+			border-style: dashed dashed dashed solid;
+		  }
+.triblue { border-color: transparent transparent transparent #ecf9ff;}
+.trigray { border-color: transparent transparent transparent #d4d4d4;}
+.threetri { width: 0px; height: 0px; border-width: 17px; 
+			border-color: #f1f1f1 #f1f1f1 #f1f1f1 transparent ;
+			border-style: solid solid solid dashed ;
+			margin-left: -27px;
+		  }
+.thrblue { border-color: #ecf9ff #ecf9ff #ecf9ff transparent;}
+.thrgray { border-color: #d4d4d4 #d4d4d4 #d4d4d4 transparent;}
+.content { padding: 30px 0 30px 0;}
+table tr { height: 48px;}
+table .check { height: 32px; line-height: 32px; text-align: left;}
+table .check img { float: left; margin: 9px 3px 0 0; }
+table .confirm input { width: 80px; float: left; }
+table .confirm a { font-size: 14px; color: #6d6e71; text-decoration: underline; line-height: 30px;}
+.head { width: 70px; text-align: right;}}
+.forimg { width: 30px; line-height: 30px;}
+.btn { font-size: 18px; color: white; background-color: #b2b2b3;}
+.btn div { padding-top: 10px; padding-bottom: 10px;}
+.forget2 { width: 300px; line-height: 16px; padding: 0;}
+.forget2 img { float: left; margin-right: 4px;}
+.forget2 div { width: 90px;}
+.forget2 a { color: #088ae0; text-decoration: underline;}
+.forget2 .gray { color: #6d6e71;}
+.forget4 { width: 300px;}
+.forget4 img { margin-right: 4px; margin-top: 3px;}
+.forget4 div { width: 170px;}
+.orange { color: #ffa200;}
+.btnb { background-color: #088ae0;}

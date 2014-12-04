@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>我的账户</title>
+<title>登注册</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="../css/reset.css">
 <link rel="stylesheet" type="text/css" href="../css/account-reset.css">
-<link rel="stylesheet" type="text/css" href="../css/my-account.css">
+<link rel="stylesheet" type="text/css" href="../css/register.css">
 </head>
 <body class="text_cen">
 	<div id="top">
@@ -25,57 +25,50 @@
 			</ul>
 		</div>
 	</div>
-	<div id="main" class="mar_cen cl">
-		<div id="mainl" class="fl">
-			<div id="nav">
-				<ul>
-					<li class="title"><p>账户管理</p></li>
-					<li class="blue"><p>我的账户</p></li>
-					<li><a href="./my-profit-detail.html">收益明细</a></li>
-					<li><a href="./my-account-detail.html">账户明细</a></li>
-					<li><a href="./my-recharge.html">充值/提现</a></li>
-					<li><a href="./my-security.html">安全中心</a></li>
-				</ul>
-			</div>
-			<div id="contact">
-				<ul>
-					<li class="title"><p>联系方式</p></li>
-					<li><img src="../img/contact_img1.png"><span>客服QQ: 1010084986</span></li>
-					<li><img src="../img/contact_img2.png"><span>邮箱: bd@halleychina.com</span></li>
-					<li><img src="../img/contact_img3.png"><span>客服电话: 075586707660</span></li>
-					<li><img src="../img/contact_img4.png"><span>QQ群: 164245302</span></li>
-				</ul>
-			</div>
-		</div>
-		<div id="mainr" class="fl">
-			<div class="mainr">
-				<div class="title"><p>我的账户</p></div>
-				<div class="halei_manu">
-					<div class="size">
-						<div class="border fl">哈雷A份数</div>
-						<div class="border fl">哈雷B份数</div>
-						<div class="fl">哈雷C份数</div>
-					</div>
-				</div>
-				<div class="halei_num">
-					<div class="size">
-						<div class="border fl">2</div>
-						<div class="border fl">0</div>
-						<div class="fl">12</div>
-					</div>
-				</div>
-				<div class="text">
-					<div class="size mar_cen text_l cl">
-							<ul class="fl">
-								<li>累计收益:</li>
-								<li>可提现额度:</li>
-								<li>总资产:</li>
-							</ul>			
-							<ul class="fl font">
-								<li><span>543</span> 元</li>
-								<li><span>245</span> 元</li>
-								<li><span>982751</span> 元</li>
-							</ul>		
+	<div class="main">
+		<div id="mainr" class="mar_cen cl">
+			<div class="mainr mar_cen">
+				<div class="revise_password frame">
+						<div class="title">注册</div>
+						<div class="contain">
+							<table class="mar_cen size">
+								<tr>
+									<td class="head">邮箱:</td>
+									<td class="content"><input id="j-fpassword" type="password" value=""/><img src="../img/confirm.png"/></td>
+								</tr>
+							</table>
+							<table class="mar_cen size">
+								<tr>
+									<td class="head">密码:</td>
+									<td class="content"><input id="j-npassword" type="password" value=""/><img src="../img/false.png"/></td>
+								</tr>
+							</table>
+							<table class="mar_cen size">
+								<tr>
+									<td class="head">确认密码:</td>
+									<td class="content"><input id="j-fpassword" type="password" value=""/><img src="../img/confirm.png"/></td>
+								</tr>
+							</table>
+							<table class="mar_cen size">
+								<tr>
+									<td class="head">手机号码:</td>
+									<td class="content"><input id="j-npassword" type="password" value=""/><img src="../img/false.png"/></td>
+								</tr>
+							</table>
+							<table class="confirm mar_cen size">
+								<tr>
+									<td class="head">短信验证:</td>
+									<td class="content">
+										<input id="j-confirm" type="text" value=""/><a href="#">发送验证码</a>
+									</td>
+									<td class="content cl">
+										<img class="fl" src="../img/false.png"/>
+										<span class="wrong fl">验证码错误</span>
+									</td>
+								</tr>
+							</table>
+							<div class="btn mar_cen text_cen"><a href="javascript:void(0)" id="j-sub-btn1"><p>马上注册</p></a></div>
+						</div>
 					</div>
 				</div>
 			</div>
