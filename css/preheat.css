@@ -14,5 +14,5 @@ table { width: 675px; height: 8px; padding-bottom: 15px;}
 .apply .apply_r { height: 40px; width: 50px; line-height: 40px; background-color: white; border-radius: 0 4px 4px 0;}
 .apply .apply_r img { float: left; margin-left: 20px; margin-top: 10px;}
 .time { font-size: 18px;}
-.foot { width: 100%; height: 50px; font-size: 13px; position: absolute; bottom: 0;}
-.foot div{ margin-top: 10px;}
+.foot { width: 100%; font-size: 13px; position: fixed; bottom: 0;}
+.foot p{ margin-top: 10px;text-align: center;line-height: 20px;}
