@@ -22,7 +22,7 @@ body { width: 100%; height: 100%; min-width: 1024px; min-height: 700px; font-siz
 .immediate table tr .td1 { width: 115px;}
 .immediate table tr .td2 { width: 220px; line-height: 40px;}
 .immediate table tr .td2 img { padding-top: 12px; padding-right: 5px;}
-.immediate table tr .td3 { width: 200px; padding-left: 20px; padding-right: 85px;}
-.immediate table tr .td3 .btn { width: 200px; height: 40px; background-color: #b2b2b3; line-height: 40px;}
-.immediate table input { width: 218px; height: 30px; border: 1px solid #d4d4d4; padding: 4px 0 4px 6px; color: #6d6e71;}
+.immediate table tr .td3 { width: 200px; padding-left: 20px; padding-right: 80px;}
+.immediate table tr .td3 .btn { width: 200px; height: 38px; background-color: #b2b2b3; line-height: 40px; margin: 0;}
+.immediate table input { width: 218px; height: 28px; border: 1px solid #d4d4d4; padding: 4px 0 4px 6px; color: #6d6e71;}
 .mar_top { margin-top: 30px;}
