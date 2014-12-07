@@ -32,7 +32,11 @@ $(document).ready(function(){
 	});
 
 
-	$(".j-close,.j-confirm").click(function(){
+	$(".j-close").click(function(){
 		$(".j-pop").addClass("hide")
+	});	
+	$(".j-confirm").click(function(){
+		$(".j-pop").addClass("hide");
+		window.location.href = "preheat.html";
 	});
 });

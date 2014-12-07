@@ -45,7 +45,7 @@
                     alert("请填写用户名或密码");
                 } else {
                     $.ajax({
-                        url: "../js/login.json",
+                        url: "../api/login.json",
                         data: {
                             username: username,
                             pass: pass
