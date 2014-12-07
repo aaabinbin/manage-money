@@ -46,12 +46,18 @@
 	<table>
 		<tr>
 			<td class="td1">填写您的邮箱：</td>
-			<td class="td2"><span><input type="text"/></span></td>
-			<td class="td3"><a href="#"><div class="btn text_cen">申购</div></a></td>
+			<td class="td2"><span><input type="text" class="j-mail"/></span></td>
+			<td class="td3"><a href="javascript:void(0)" class="j-purchase"><div class="btn text_cen">申购</div></a></td>
 		</tr>
-		<tr>
+		<tr class="j-warn">
 			<td class="td1"></td>
-			<td class="td2"><img class="fl" src="../img/false.png">抱歉，此邮箱已提交申购。</td>
+			<td class="td2">
+				<div class="hide">
+				<img class="fl" src="../img/false.png"><span></span>
+				</div>
+				<!-- <span><img class="fl" src="../img/true.png">youxiang </span> -->
+			</td>
+				
 			<td class="td3"></td>
 		</tr>
 	</table>
@@ -88,5 +94,6 @@
 	</div>
 </div>
 <script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/applyPurchase.js"></script>
 </body>
 </html>

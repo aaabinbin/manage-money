@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+.hide{display: none}
 .cl:after{content: ".";display: block;height: 0px;clear: both;visibility: hidden;}
 * html .cl{height: 1%;}/*IE6*/
 *:first-child+html .cl{min-height: 1px;}/*IE7*/
