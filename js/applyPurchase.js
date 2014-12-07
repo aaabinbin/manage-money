@@ -21,11 +21,11 @@ $(document).ready(function(){
 				if(data.errno==0){
 					alert("申购成功！");
 				}else if(data.errno == 1){
-					$(".j-warn td2 span").text("输入的邮箱格式不正确");
-					$(".j-warn td2 div").removeClass("hide");
+					$(".j-warn .td2 span").text("输入的邮箱格式不正确");
+					$(".j-warn .td2 div").removeClass("hide");
 				}else if(data.errno == 2){
-					$(".j-warn td2 span").text("抱歉，此邮箱已提交申购。");
-					$(".j-warn td2 div").removeClass("hide");
+					$(".j-warn .td2 span").text("抱歉，此邮箱已提交申购。");
+					$(".j-warn .td2 div").removeClass("hide");
 				}
 			}
 		});
