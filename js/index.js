@@ -67,7 +67,7 @@
         getData:function(){
             var self = this;
             $.ajax({
-                url:"../js/indexdata.json",
+                url:"../api/indexdata.json",
                 data:{},
                 dataType:"json",
                 type:"get",

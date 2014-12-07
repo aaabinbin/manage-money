@@ -19,7 +19,7 @@ $(document).ready(function(){
 			},
 			success:function(data){
 				if(data.errno==0){
-					alert("申购成功！");
+					$(".j-pop").removeClass("hide")
 				}else if(data.errno == 1){
 					$(".j-warn .td2 span").text("输入的邮箱格式不正确");
 					$(".j-warn .td2 div").removeClass("hide");
@@ -29,5 +29,10 @@ $(document).ready(function(){
 				}
 			}
 		});
+	});
+
+
+	$(".j-close,.j-confirm").click(function(){
+		$(".j-pop").addClass("hide")
 	});
 });
