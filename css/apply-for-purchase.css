@@ -3,13 +3,13 @@ body { width: 100%; height: 100%; min-width: 1024px; min-height: 700px; font-siz
 	   min-width: 1024px;
 	   height: 100%;
 	   min-height: 700px;
-	   position: fixed; 
+	   position: absolute; 
 	   z-index: 99;
 	   background-color: #000; 
 	   background:rgba(0,0,0,0.4) none repeat scroll !important; /*实现FF背景透明，文字不透明*/
 	   filter:Alpha(opacity=40);/*实现IE背景透明*/ 
 	}
-.frame { width: 600px; height: 360px; top: 50%; margin-top: -180px; position: relative; background-color: #088ae0;}
+.frame { width: 600px; height: 360px; margin-top: 10%; position: relative; background-color: #088ae0;}
 .frame .poptop { height: 250px;}
 .frame .poptop a img { margin: 10px 10px 0 0;}
 .frame .poptop .true { margin: 10px 0 18px 0;}

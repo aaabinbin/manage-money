@@ -5,7 +5,7 @@
 (function(){
     var accountDetail = {
 
-        baseUrl: "../api/",
+        baseUrl: "../js/",
 
         prevPage: 0,
         curPage: 1,
