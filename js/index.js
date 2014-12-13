@@ -9,9 +9,8 @@
         productLen:3,
         incomeTpl:
         [
-
-            '<span class="num1"><%= Item.dayEarnings %>元</span>',
-            '<span class="num2"><%= Item.leastCopies %>份</span>',
+            '<span class="num1"><%= Item.last_profit %></span>',
+            '<span class="num2"><%= Item.remainder %>份</span>',
             '<span class="num3"><%= Item.price %>元/份</span>',
 
         ].join(""),
@@ -74,12 +73,60 @@
                     });
                 }
             });
+            $(".cathectic p").click(function(){
+                $product = $(this).parent().parent().parent();
+                var product = $product.find(".title span").html();
+                var amount = $product.find(".money .num4 input").val();
+                if(amount!=""){
+                    $.ajax({
+                        url:self.apiUrl+'order.json',
+                        type:'post',
+                        dataType:'json',
+                        data:{
+                            product:product,
+                            amount:amount
+                        },
+                        success:function(data){
+                            switch(data.error.code){
+                                case 0:
+                                    alert("购买成功");
+                                    break;
+                                case 1:
+                                    alert("没有登陆");
+                                    break;
+                                case 2:
+                                    alert("参数错误");
+                                    break;
+                                case 10:
+                                    alert("产品不存在");
+                                    break;
+                                case 11:
+                                    alert("数量格式错误");
+                                    break;
+                                case 12:
+                                    alert("剩余份数不足");
+                                    break;
+                                case 13:
+                                    alert("余额不足");
+                                    break;
+                                case 14:
+                                    alert("系统错误");
+                                    break;
+                            }
+                        }
+                    })
+                }
+                else{
+                    alert("分数不能为空");
+                }
+            })
         },
 
         getData:function(){
             var self = this;
             $.ajax({
-                url:"../js/indexdata.json",
+                //url:"../js/indexdata.json",
+                url:self.apiUrl+"index/product/info.json",
                 data:{},
                 dataType:"json",
                 type:"get",
@@ -94,15 +141,19 @@
         renderPage:function(data){
             var self = this;
             var $income = $("#halei .j-income_num");
-            $(".j-btcPrice").text(data.BTCprice);
+            $(".j-btcPrice").text("3698.09");
             for(var i =0;i<this.productLen;i++){
-                $income.eq(i).append(Util.tmpl(self.incomeTpl,{Item:data.productInfo[i]}));
+                $income.eq(i).append(Util.tmpl(self.incomeTpl,{Item:data.product_info[i]}));
+                $income.parent().find(".title span").html(data.product_info[i].product);
                 var idName ='graph'+parseInt(i+1);
-                self.makeTable(data.productInfo[i].coordinate,idName);
+                self.makeTable(data.product_info[i].history_profit,idName);
             }
         },
         makeTable:function(arr,id){
-            var myData = arr;
+            var myData = new Array();
+            for(i=0;i<arr.length;i++){
+                myData[i] = new Array(arr[i]['date'],arr[i]['profit']);
+            }
             var myChart = new JSChart(id, 'line');
             myChart.setDataArray(myData);
             myChart.setTitleFontSize(11);
