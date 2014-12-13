@@ -22,7 +22,7 @@
 .frame { width: 700px; height: auto; color: #000000;}
 .revise_password { width: 700px; height: auto; }
 .revise_password .contain { height: auto; padding-top: 30px; padding-bottom: 30px;}
-.contain .size { height: 32px; margin-bottom:20px; line-height: 32px;}
+.contain .size { height: 32px; line-height: 32px;}
 .contain .size img { visibility: hidden; margin-left: 5px;}
 .contain .size .head { width: 60px; text-align: right;}
 .contain .size .content { width: auto; text-align: left;}
@@ -43,3 +43,4 @@
 .confirm .wrong { margin-left: 2px; visibility: hidden;}
 .confirm .content { line-height: 25px;}
 .confirm img { margin-top: 5px;}
+.info {padding-left: 5px;color: red;}

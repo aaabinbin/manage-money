@@ -59,7 +59,7 @@
 						</tr>
 						<tr>
 							<td></td>
-							<td class="forget2" colspan="2"><span class="gray">没有收到? </span><a href="#">重新发送</a></td>
+							<td class="forget2" colspan="2"><span class="gray">没有收到? </span><a id="resent" href="#">重新发送</a></td>
 							<td></td>
 						</tr>
 						<tr>
@@ -104,5 +104,11 @@
 		</div>
 	</div>
 	<script src="../js/jquery.js"></script>
+	<script src="../js/forgetpass.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		forgetpass2.init();
+	})
+	</script>
 </body>
 </html>

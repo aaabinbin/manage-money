@@ -1,6 +1,8 @@
 
 (function(){
 	var security = {
+		apiUrl:'../api/',
+
 		init: function(){
             this.bindEvent();
 
@@ -18,7 +20,31 @@
 				self.npassword();
 				self.repassword();
 				if( ((_reImg).attr("src")==Img[0]) && ((_nImg).attr("src")==Img[0]) && ((_fImg).attr("src")==Img[0]) )
-					alert("提交成功");
+					$.ajax({
+						url:self.apiUrl+'password/change.json',
+						type:'post',
+						dataType:'json',
+						data:{
+							current_password:$('#j-fpassword').val(),
+							new_password:$('#j-npassword').val()
+						},
+						success:function(data){
+							switch(data.error.code){
+								case 0:
+									alert("修改成功");
+									break;
+								case 1:
+									alert("请先登录");
+									break;
+								case 2:
+									alert("参数错误");
+									break;
+								case 10:
+									alert("当前密码不正确");
+									break;
+							}
+						}
+					})
 			})
 			//当填写密码错误时
 			$("#j-fpassword").click(function(){
@@ -48,7 +74,35 @@
 				self.bankcardnum();
 				self.name();
 				if( ((_bImg).attr("src")==Img[0]) && ((_naImg).attr("src")==Img[0]) )
-					alert("提交成功");
+					$.ajax({
+						url:self.apiUrl+'account/bank/bind.json',
+						type:'post',
+						dataType:'json',
+						data:{
+							bank_card_id:$('#j-bankcardnum').val(),
+							bank_name:$('#j-bank'),
+							real_name:$('#j-name')
+						},
+						success:function(data){
+							switch(data.error.code){
+								case 0:
+									alert("提交成功");
+									break;
+								case 1:
+									alert("没有登陆");
+									break;
+								case 2:
+									alert("参数错误");
+									break;
+								case 10:
+									alert("银行卡格式错误");
+									break;
+								case 11:
+									alert("姓名不匹配");
+									break;
+							}
+						}
+					})
 			})
 
 			$("#j-bankcardnum").click(function(){

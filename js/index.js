@@ -3,6 +3,8 @@
  */
 (function(){
     var Index = {
+
+        apiUrl:"../api/",
         hasBind:0,
         productLen:3,
         incomeTpl:
@@ -18,6 +20,7 @@
             this.bindEvent();
         },
         bindEvent:function(){
+            var self = this;
             if(!Util.hasAttrSupport("placeholder")){
                 $("#j-user").val("用户名").click(function(){
                     if($(this).val()=="用户名"){
@@ -45,7 +48,7 @@
                     alert("请填写用户名或密码");
                 } else {
                     $.ajax({
-                        url: "../js/login.json",
+                        url: self.apiUrl+"login.json",
                         data: {
                             username: username,
                             pass: pass
@@ -55,8 +58,17 @@
                         error: function () {
                         },
                         success: function (data) {
-                            if (data.loginStatus == 1) {
-                                alert("登录成功")
+                            switch(data.error.code){
+                                case 0:
+                                    alert("登录成功");
+                                    window.location.href = data.result.next;
+                                    break;
+                                case 10:
+                                    alert("账号或密码错误");
+                                    break;
+                                case 11:
+                                    alert("连续失败次数过多，请一个小时后再试");
+                                    break;
                             }
                         }
                     });

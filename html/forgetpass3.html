@@ -46,16 +46,16 @@
 						<tr>
 							<td class="forimg"></td>
 							<td class="head">新密码：</td>
-							<td><span><input type="text"/></span></td>
+							<td><span><input id="j-password" type="text"/></span></td>
 							<td class="forimg"></td>
 						</tr>
 						<tr>
 							<td class="forimg"></td>
 							<td class="head">确认密码：</td>
-							<td><span><input type="text"/></span></td>
+							<td><span><input id="j-repassword" type="text"/></span></td>
 							<td class="forimg"></td>
 						</tr>
-						<tr class="check cl">
+						<tr class="check cl" id="check">
 							<td></td>
 							<td></td>
 							<td><img src="../img/false.png"/>两次密码不一致</td>
@@ -63,7 +63,7 @@
 						</tr>
 						<tr>
 							<td></td>
-							<td class="btn btnb" colspan="2"><a href="forgetpass4.html"><div class="block">修改密码</div></a></td>
+							<td class="btn btnb" colspan="2"><a href="javascript:void(0)"><div class="block">修改密码</div></a></td>
 							<td></td>
 						</tr>
 					</table>
@@ -103,5 +103,11 @@
 		</div>
 	</div>
 	<script src="../js/jquery.js"></script>
+	<script src="../js/forgetpass.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		forgetpass3.init();
+	})
+	</script>
 </body>
 </html>

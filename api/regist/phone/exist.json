@@ -4,6 +4,6 @@
         "message": "ok"
     },
     "result": {
-    	"next":"about:blank"
+    	"exist":"True"
     }
 }

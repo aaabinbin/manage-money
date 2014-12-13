@@ -90,17 +90,17 @@
 						<table class="mar_cen size">
 							<tr>
 								<td class="head">提现金额:</td>
-								<td class="content"><input id="j-fpassword" type="text" value="543"/><img src="../img/confirm.png"/></td>
+								<td class="content"><input id="j-amount" type="text" value="543"/><img src="../img/confirm.png"/></td>
 							</tr>
 						</table>
 						<table class="confirm mar_cen size">
 							<tr>
 								<td class="head">短信验证:</td>
-								<td class="content"><input id="j-confirm" type="text" value=""/><a href="#">发送验证码</a></td>
+								<td class="content"><input id="j-confirm" type="text" value=""/><a id="send" href="javascript:void(0)">发送验证码</a></td>
 							</tr>
 						</table>
-						<div class="text mar_cen text_l"><img src="../img/confirm.png">验证码正确</div>
-						<a href="javascript:void(0)" class="btn mar_cen text_cen">确认提现</a>
+						<div class="text mar_cen text_l" style="display:none"><img src="../img/confirm.png">验证码正确</div>
+						<a href="javascript:void(0)" id="confirm" class="btn mar_cen text_cen">确认提现</a>
 					</div>
 				</div>
 			</div>
@@ -138,5 +138,6 @@
 		</div>
 	</div>
 	<script src="../js/jquery.js"></script>
+	<script src="../js/recharge.js"></script>
 </body>
 </html>

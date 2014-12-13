@@ -2,8 +2,5 @@
     "error": {
         "code": 0,
         "message": "ok"
-    },
-    "result": {
-    	"next":"about:blank"
     }
 }

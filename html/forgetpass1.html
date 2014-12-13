@@ -46,14 +46,14 @@
 						<tr>
 							<td class="forimg"></td>
 							<td class="head">注册邮箱：</td>
-							<td><span><input type="text"/></span></td>
+							<td><span><input id="username" type="text"/></span></td>
 							<td class="forimg"><img src="../img/false.png"></td>
 						</tr>
 						<tr class="confirm cl">
 							<td class="forimg"></td>
 							<td class="head">验证码：</td>
 							<td>
-								<span><input type="text"/></span>
+								<span><input id="rand" type="text"/></span>
 								<img class="fl" src="../img/confirmnum.png">
 								<a href="#">换一张</a>
 							</td>
@@ -107,5 +107,11 @@
 		</div>
 	</div>
 	<script src="../js/jquery.js"></script>
+	<script src="../js/forgetpass.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		forgetpass1.init();
+	})
+	</script>
 </body>
 </html>
