@@ -35,6 +35,9 @@
 				})
 			})
 			$('#confirm').click(function(){
+				if($("#j-confirm").val()==''){
+					return;
+				}
 				$.ajax({
 					url:self.apiUrl+'withdraw/apply.json',
 					type:'post',
