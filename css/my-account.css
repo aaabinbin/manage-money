@@ -12,8 +12,8 @@
 .halei_num .size { height: 40px; width: 100%; padding-top: 22px; font-size: 26px; color: #ffa200;}
 .halei_num .size div { width: 232px; height: 40px; line-height: 40px;}
 .halei_num .size .border { border-right: 1px solid #d4d4d4;}
-.text { width: 100%; height: auto;}
-.text .size { width: 237px; height: auto; margin-top: 50px; margin-bottom: 144px;}
+.text { width: 100%; height: auto;text-align: center;}
+.text .size { display: inline-block; height: auto; margin-top: 50px; margin-bottom: 144px;*zoom:1;}
 .text ul li { height: 22px; margin-bottom: 24px; font-size: 20px; color: #6d6e71;}
 .text .font { margin-left: 20px;}
 .text .font span { color: #ffa200;}
