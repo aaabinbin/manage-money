@@ -46,7 +46,8 @@
 .cha_size p { width: 270px; margin: 0 auto; text-align: center; color: #6d6e71;}
 .font24 { font-size:24px; padding-bottom: 25px;}
 .gray_y2 { height: 260px; width: 1px; margin: 20px 0 0 0; background-color: #e9e9e9;}
-#process { width: 1024px; height: 320px; background-color: white; margin-top: 30px;}
-#text { width: 960px; height: 256px; padding-top: 30px;} 
-#text .title { color: #6d6e71; width: 960px; font-size: 24px;}
-
+#process { width: 1024px; background-color: white; margin-top: 30px;}
+#text { width: 960px; height: 1050px; padding-top: 30px;} 
+#text img{ width: 911px; margin: 0 auto;} 
+#text .title { color: #6d6e71; width: 960px; font-size: 24px;text-align: center;}
+#banner img{position: absolute;left: 50%;margin-left: -50%;}

@@ -21,23 +21,25 @@ a { text-decoration: none; color: white; margin: 0; padding: 0;}
 .f088ae0 { color: #088ae0;}
 
 body { width: 100%; height: 100%; font-family: "微软雅黑"; font-size: 14px; background-color: #eeeeee; min-width: 1024px;}
-#top { width: 100%; height: 110px; background-image: url("../img/top_bg.png"); background-repeat: repeat-x;}
+#top { width: 100%; height: 130px; background-image: url("../img/top_bg.png"); background-color: #fff; background-repeat: repeat-x;}
 #top_black { width: 1024px; height: 30px; color: white; background-color: #313131;}
 #top_black span { height: 30px; line-height: 30px;}
 .infor { margin-right: 20px;}
 .ID { margin-right: 40px;}
 .login { margin-right: 67px;}
-#top_white { width: 1024px; height: 80px; color: #313131;}
-.logo { width: 60px; height: 60px; margin-top: 10px; background-color: #bfbfbf;}
-#top_white .nav { height: 50px; margin-top: 10px;}
+#top_white { width: 1024px; height: 100px; color: #313131;}
+.indexdiv{display: block;float: left;}
+.logo { width: 62px; height: 76px; margin: 10px 0; background:url("../img/logo.png");}
+.logotext{ width: 155px; height: 76px; margin: 10px 0 10px 20px; background:url("../img/logotext.png");}
+#top_white .nav { height: 50px; margin-top: 20px;}
 #top_white .nav a { color: black;}
 #top_white .nav a:hover { color: #0643b6;}
 #top_white .nav li {border-right:1px solid #b9e5fa;text-align: center; height: 50px; line-height: 50px; font-size: 18px; float: left;padding: 0 40px;}
 #top_white .nav .font{ color:#000; }
-#banner { width: 100%; height: 380px; background-color: #088ae0;}
-#ban_main { width: 1024px; height: 380px; background-color: #088ae0; }
-#ban_main img { margin: 70px 0 0 28px;}
-#login_register { width: 300px; height: 240px; margin: 70px 0 0 324px; background-color: #055386; }
+#banner { width: 100%; min-height: 380px;}
+#ban_main { width: 1024px; min-height: 380px; position: relative;}
+
+#login_register { width: 300px; height: 240px; margin-top: 70px; background-color: #055386; }
 #login_register input { width: 220px; height: 14px; font-size: 14px; color: #6d6e71; padding: 10px; float: left; }
 #login_register span { color: white; font-size: 14px;}
 .user { margin: 40px 0 0 30px;}
