@@ -96,6 +96,20 @@
                 var url = self.baseUrl + "account-detail-" + self.nextPage + ".json";
                 self.ajaxPage(url, field);
             });
+
+            $(".j-search").click(function(){
+                var searchVal = $("#content").val();
+                $.ajax({
+                    url: "",
+                    method: "get",
+                    dataType: "json",
+                    data: {
+                        searchVal:searchVal
+                    },
+                    success: function(msg){    
+                    }               
+                });
+            });
         },
         
         ajaxPage: function (url, field) {
