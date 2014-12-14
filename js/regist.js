@@ -21,7 +21,7 @@
 			self.$token = $('#j-confirm');
 			self.$tokenInfo = self.$token.parent().next().children();
 			self.$btn = $('#j-sub-btn1');
-
+			self.$agree = $(".j-agreebox");
 			self.bindEvent();
 		},
 
@@ -39,6 +39,9 @@
 			})
 			self.checkInput(self.$phone,function(){
 				return self.checkPhone(self.$phone.val());
+			})
+			self.checkInput(self.$agree,function(){
+				return self.checkBox(self.$agree[0].checked);
 			})
 			self.$token.focus(function(){
 				self.$tokenInfo.css({'visibility':'hidden'});
@@ -75,6 +78,10 @@
 					$ele = $(this);
 					$ele.trigger('blur');
 				});
+				if(!self.$agree[0].checked){
+
+					flag = false;
+				}	
 				$('.contain img').each(function(){
 					$ele = $(this);
 					if($ele.attr('src')==self.imgUrl+"false.png"){
@@ -87,7 +94,7 @@
 						type:'post',
 						dataType:'json',
 						data:{
-							email:self.$emal.val(),
+							email:self.$email.val(),
 							password:self.$password.val(),
 							phone:self.$phone.val(),
 							token:self.$token.val()
@@ -126,10 +133,11 @@
 			})
 		},
 
+
 		checkInput:function($ele,callback){
 			var self = this;
 			$ele.focus(function(){
-				$ele.next().css({'visibility':'hidden'});
+				$ele.next('img').css({'visibility':'hidden'});
 				$ele.parent().parent().next().find('.info').html("");
 			}).blur(function(){
 				var data = callback();
@@ -142,7 +150,20 @@
 				$ele.parent().parent().next().find('.info').html(data.info);
 			});
 		},
-
+		checkBox:function(val){
+			var self = this;
+			var result = false;		
+			var info = "";	
+			if(!val){
+				info = "请同意协议!";
+			}else{
+				result = true;	
+			}
+			return {
+				result:result,
+				info:info
+			}
+		},
 		checkEmail:function(email){
 			var self = this;
 			var result = false;

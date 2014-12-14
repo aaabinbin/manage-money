@@ -92,7 +92,7 @@
                                     alert("购买成功");
                                     break;
                                 case 1:
-                                    alert("没有登陆");
+                                    window.location.href="../login.html";
                                     break;
                                 case 2:
                                     alert("参数错误");
@@ -141,7 +141,6 @@
         renderPage:function(data){
             var self = this;
             var $income = $("#halei .j-income_num");
-            $(".j-btcPrice").text("3698.09");
             for(var i =0;i<this.productLen;i++){
                 $income.eq(i).append(Util.tmpl(self.incomeTpl,{Item:data.product_info[i]}));
                 $income.parent().find(".title span").html(data.product_info[i].product);
