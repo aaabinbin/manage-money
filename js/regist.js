@@ -57,6 +57,8 @@
 				self.$tokenInfo.css({'visibility':'visible'});
 			})
 			self.$token.next().click(function(){
+
+				var $btn = $(this);
 				self.$phone.trigger('blur');
 				if(self.$phone.next().attr('src')==self.imgUrl+"confirm.png"){
 					$.ajax({
@@ -66,8 +68,34 @@
 						data:{
 							phone:self.$phone.val()
 						},
-						success:function(){
-
+						success:function(data){
+							switch(data.error.code){
+								case 0:
+									alert("验证码发送成功");
+									$btn.html("重新发送(60)").css({'color':'grey'});
+									$btn.unbind('click').click(function(){
+										return false;
+									});
+									var time = function(t){
+										setTimeout(function(){
+											var content = $btn.html();
+											$btn.html(content.replace(/[\d]{1,2}/,t-1));
+											if(t>1){
+												time(t-1);
+											}
+											else{
+												$btn.html("重新发送").css({'color':'#088ae0'});
+												$btn.unbind('click');
+												self.bindEvent();
+											}
+										},1000);
+									};
+									time(60);
+									break;
+								default:
+									alert("发送验证码失败");
+									break;
+							}							
 						}
 					})
 				}
@@ -79,7 +107,6 @@
 					$ele.trigger('blur');
 				});
 				if(!self.$agree[0].checked){
-
 					flag = false;
 				}	
 				$('.contain img').each(function(){
