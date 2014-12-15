@@ -15,7 +15,8 @@ ol,ul{ list-style:none;}
 .mar_cen { margin: 0 auto;}
 .fl { float: left;}
 .fr { float: right;}
-a { text-decoration: none; color: white; margin: 0; padding: 0;}
+a { text-decoration: none; color: #088ae0; margin: 0; padding: 0;}
+#top a {color: #fff;}
 .block { display: block;}
 .f0643b6 { color: #0643b6;}
 .f088ae0 { color: #088ae0;}
