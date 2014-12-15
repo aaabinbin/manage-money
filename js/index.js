@@ -78,9 +78,11 @@
                 if(num<0.01){
                     return false;
                 }
-                $product = $(this).parent().parent().parent();
+
+                $product = $(this).closest(".halei");
                 var product = $product.find(".title span").attr('productCode');
                 var amount = $product.find(".money .num4 input").val();
+
                 if(amount!=""){
                     $.ajax({
                         url:self.apiUrl+'order.json',
@@ -157,7 +159,9 @@
             var $income = $("#halei .j-income_num");
             for(var i =0;i<this.productLen;i++){
                 $income.eq(i).append(Util.tmpl(self.incomeTpl,{Item:data.product_info[i]}));
-                $income.parent().find(".title span").attr('productCode',data.product_info[i].product);
+                $income.parent().find(".title span").eq(i).attr('productCode',data.product_info[i].product);
+                $income.closest(".halei").find(".j-num5").eq(i).html(data.product_info[i].price);
+
                 var idName ='graph'+parseInt(i+1);
                 self.makeTable(data.product_info[i].history_profit,idName);
             }
