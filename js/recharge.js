@@ -10,6 +10,7 @@
 		bindEvent:function(){
 			var self = this;
 			$('#send').click(function(){
+				var $btn = $(this);
 				$.ajax({
 					url:self.apiUrl+'withdraw/phone/verify.json',
 					type:'post',
@@ -20,6 +21,26 @@
 					success:function(data){
 						switch(data.error.code){
 							case 0:
+								alert("验证码发送成功");
+								$btn.html("重新发送(60)").css({'color':'grey'});
+								$btn.unbind('click').click(function(){
+									return false;
+								});
+								var time = function(t){
+									setTimeout(function(){
+										var content = $btn.html();
+										$btn.html(content.replace(/[\d]{1,2}/,t-1));
+										if(t>1){
+											time(t-1);
+										}
+										else{
+											$btn.html("重新发送").css({'color':'#088ae0'});
+											$btn.unbind('click');
+											self.bindEvent();
+										}
+									},1000);
+								};
+								time(60);
 								break;
 							case 1:
 								alert("请先登录");
