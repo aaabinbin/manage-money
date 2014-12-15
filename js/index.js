@@ -74,6 +74,10 @@
                 }
             });
             $(".cathectic p").click(function(){
+                var num = $(this).parent().parent().prev('.j-money').find('input').val();
+                if(num<0.01){
+                    return false;
+                }
                 $product = $(this).parent().parent().parent();
                 var product = $product.find(".title span").html();
                 var amount = $product.find(".money .num4 input").val();
@@ -119,7 +123,17 @@
                 else{
                     alert("分数不能为空");
                 }
-            })
+            });
+
+            $(".j-money").keyup(function(){
+                var num = $(this).find('input').val();
+                if(num<0.01){
+                    return false;
+                }
+                var price = $(this).find('.j-num5').text();
+                var all = num*price;
+                $(this).find(".j-num6").text(all);
+            });
         },
 
         getData:function(){
@@ -143,7 +157,7 @@
             var $income = $("#halei .j-income_num");
             for(var i =0;i<this.productLen;i++){
                 $income.eq(i).append(Util.tmpl(self.incomeTpl,{Item:data.product_info[i]}));
-                $income.parent().find(".title span").html(data.product_info[i].product);
+                // $income.parent().find(".title span").html(data.product_info[i].product);
                 var idName ='graph'+parseInt(i+1);
                 self.makeTable(data.product_info[i].history_profit,idName);
             }
