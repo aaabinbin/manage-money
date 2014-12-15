@@ -1,5 +1,12 @@
 $(document).ready(function(){
 	var apiUrl = "../api/";
+    $("#j-password").keydown(function(event){
+        //键盘监听回车
+        if(event.which == "0XD" || event.keyCode==13){
+            $('#j-log-btn').trigger('click');
+            return false;
+        }
+    });
 	$("#j-log-btn").click(function(){
 	    var username = $("#j-user").val();
 	    var pass = $("#j-password").val();
