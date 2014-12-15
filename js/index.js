@@ -79,7 +79,7 @@
                     return false;
                 }
                 $product = $(this).parent().parent().parent();
-                var product = $product.find(".title span").html();
+                var product = $product.find(".title span").attr('productCode');
                 var amount = $product.find(".money .num4 input").val();
                 if(amount!=""){
                     $.ajax({
@@ -157,7 +157,7 @@
             var $income = $("#halei .j-income_num");
             for(var i =0;i<this.productLen;i++){
                 $income.eq(i).append(Util.tmpl(self.incomeTpl,{Item:data.product_info[i]}));
-                // $income.parent().find(".title span").html(data.product_info[i].product);
+                $income.parent().find(".title span").attr('productCode',data.product_info[i].product);
                 var idName ='graph'+parseInt(i+1);
                 self.makeTable(data.product_info[i].history_profit,idName);
             }
